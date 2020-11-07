@@ -1,0 +1,14 @@
+[Unit]
+Description=Gunicorn instance to serve chatroom
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/Documents/flask-socketio
+ExecStart=/home/ubuntu/Documents/flask-socketio/gunicorn \
+-k geventwebsocket.gunicorn.workers.GeventWebSocketWorker \
+–w 1 \
+-b 0.0.0.0:5000 \
+wsgi:app
+
+[Install]
+WantedBy=multi-user.target
