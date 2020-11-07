@@ -28,7 +28,7 @@ def user_id(id):
     return str(id)
 
 # Display the HTML Page & pass in a username parameter
-@app.route('/chat/<username>')
+@app.route('/html/<username>')
 def html(username):
     return render_template('index.html', username=username)
 
