@@ -6,10 +6,13 @@ Flask socketio example
 > 1. 模擬貼圖donate功能
 > 2. 加入/離開聊天室
 
+## 聲明
+網頁中使用之貼圖皆為網路上取得，僅作為教育研究用途之素材，無用於營利。
 
 ## Index
 - [Flask socketio example](#flask-socketio-example)
   - [鳴謝](#鳴謝)
+  - [聲明](#聲明)
   - [Index](#index)
   - [Installation](#installation)
   - [Usage](#usage)
