@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/home/ubuntu/Documents/flask-socketio
-ExecStart=/home/ubuntu/Documents/flask-socketio/gunicorn \
+ExecStart=/home/ubuntu/Documents/flask-socketio/venv/bin/gunicorn \
 -k geventwebsocket.gunicorn.workers.GeventWebSocketWorker \
 –w 1 \
 -b 0.0.0.0:5000 \
