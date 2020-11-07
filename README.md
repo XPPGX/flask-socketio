@@ -14,14 +14,15 @@ Flask socketio example
   - [鳴謝](#鳴謝)
   - [聲明](#聲明)
   - [Index](#index)
-  - [Installation](#installation)
-  - [Usage](#usage)
+- [Installation](#installation)
+- [Usage](#usage)
   - [Modify service file](#modify-service-file)
   - [Deploy](#deploy)
   - [Result](#result)
-  - [License](#license)
+- [License](#license)
 
-## Installation
+Installation
+===
 
 Use the package manager pip to install requirement package.
 
@@ -30,7 +31,8 @@ $pip install -r requirements.txt
 ```
 
 
-## Usage
+Usage
+===
 clone this repo
 ```bash
 $git clone https://github.com/a607ernie/flask-socketio.git
@@ -102,5 +104,6 @@ check the result
 http://ServerIP:5000/
 ```
 
-## License
+License
+===
 [MIT](https://choosealicense.com/licenses/mit/)
