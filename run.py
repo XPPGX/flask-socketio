@@ -14,9 +14,9 @@ def root():
         <h1>Welcome to ChatRoom</h1>
 
         <h3>
-                <li>/chat/username : 可進入聊天室</li>
+                <li>/html/username : 可進入聊天室</li>
                 <li>username 可更換成任意字元</li>
-                <li>聊天室無法輸入中文(JS編碼問題)</li>
+                <li>聊天室可能無法輸入中文(JS編碼問題)</li>
         
         </h3>
     </div>
