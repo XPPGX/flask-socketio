@@ -9,14 +9,18 @@ socketio = SocketIO(app, logger=True)
 # Send HTML!
 @app.route('/')
 def root():    
-    return "Hello world!"
+    return """
+    <div style="text-align:center;">
+        <h1>Welcome to ChatRoom</h1>
 
-# Returns a random number
-@app.route('/random')
-def random():  
-    from random import randint  
-    html = str(randint(1, 100))
-    return html
+        <h3>
+                <li>/chat/username : 可進入聊天室</li>
+                <li>username 可更換成任意字元</li>
+                <li>聊天室無法輸入中文(JS編碼問題)</li>
+        
+        </h3>
+    </div>
+    """
 
 # Prints the user id
 @app.route('/user/<id>')
@@ -24,7 +28,7 @@ def user_id(id):
     return str(id)
 
 # Display the HTML Page & pass in a username parameter
-@app.route('/html/<username>')
+@app.route('/chat/<username>')
 def html(username):
     return render_template('index.html', username=username)
 
