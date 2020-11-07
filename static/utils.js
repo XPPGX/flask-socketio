@@ -5,7 +5,7 @@ $(document).ready(function() {
     
     // The http vs. https is important. Use http for localhost!
     socket = io.connect('http://' + document.domain + ':' + location.port);
-    var username = document.getElementsByClassName("title")[0].baseURI.split('/html/')[1];
+    var username = document.getElementsByClassName("title")[0].baseURI.split('/chat/')[1];
     
     // join the room
     var joinRoom = function (){
