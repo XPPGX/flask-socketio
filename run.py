@@ -71,4 +71,4 @@ def on_leave(data):
 # Actually Start the App
 if __name__ == '__main__':
     """ Run the app. """    
-    socketio.run(app, port=8000, debug=True)
+    socketio.run(app,host='0.0.0.0', port=8000, debug=True)
