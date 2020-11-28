@@ -35,30 +35,13 @@
         </div>
     </div>    
 
-    <div style="width: 100%;padding:5px;">
-        <video id="video1" height="100%" width="50%" controls="controls" preload="auto" autoplay="autoplay" muted="true">
-        </video>
-        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-        <!-- <script src="./stream.js"></script> -->
-    </div>
-    <span></span>
-    <div style="width: 100%;padding:5px;">
-        <video id="video2" height="100%" width="50%" controls="controls" preload="auto" autoplay="autoplay" muted="true">
-        </video>
-        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-        <!-- <script src="./stream.js"></script> -->
-    </div>
-
-
-
-
 
 </body>
 
 
 {% block body_static %}
-    <script src="{{ url_for('static', filename='utils.js') }}"></script>
-    <script src="{{ url_for('static', filename='stream.js') }}"></script>
+    <script src='{{ url_for('static', filename='utils.js') }}'></script>
+    <!-- <script src="{{ url_for('static', filename='chat.js') }}"></script> -->
 {% endblock %}
 
 </html>
