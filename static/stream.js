@@ -6,7 +6,7 @@ if (Hls.isSupported()) {
     hls1.on(Hls.Events.MEDIA_ATTACHED, function() {
       console.log("video and hls.js are now bound together !");
       hls1.loadSource(
-        "http://54.90.87.202:8080/hls/test.m3u8"
+        "http://52.54.135.135:8080/hls/test.m3u8"
       );
     });
   
@@ -17,7 +17,7 @@ if (Hls.isSupported()) {
     hls2.on(Hls.Events.MEDIA_ATTACHED, function() {
       console.log("video and hls.js are now bound together !");
       hls2.loadSource(
-        "http://54.90.87.202:8080/hls/test2.m3u8"
+        "http://52.54.135.135:8080/hls/test2.m3u8"
       );
     });
     
